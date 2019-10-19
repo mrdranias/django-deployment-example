@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--  -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>WELCOME TO INDEX!</h1>
+      <!-- <a href="basic_app/other.html">THE OTHER PAGE</a> -->
+
+      <p><a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a></p>
+      <p><a href="{% url 'basic_app:relative' %}">THE RELATIVE PAGE</a></p>
+      <p> <a href="{% url 'admin:index' %}">ADMIN PAGE</a> </p>
+
+    </div>
+  </body>
+</html>
